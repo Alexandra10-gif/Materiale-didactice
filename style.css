@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Stiluri pentru pagina de materiale */
+.lista-materiale { margin-top: 40px; }
+.grid-materiale { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1-fr)); 
+    gap: 30px; 
+    padding: 20px 0; 
+}
+
+.card-material { 
+    background: #fff; 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    border-radius: 8px; 
+    text-align: center; 
+}
+
+.preview-img { 
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    background-color: #eee; /* Locțiitor dacă nu ai încă imaginea */
+}
+
+.btn-download { 
+    display: block; 
+    background: #27ae60; 
+    color: #fff; 
+    padding: 10px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+    font-weight: bold;
+}
+
+.btn-download:hover { background: #219150; }
+footer {
+    background-color: #e8f5e9; /* Verde pastel deschis */
+    color: #2e7d32; /* Text verde închis */
+    padding: 40px 0;
+    text-align: center;
+    border-top: 3px solid #4CAF50;
+}
+
+.footer-motto {
+    font-style: italic; /* Text înclinat */
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+}
+/* Animație pentru butoanele de descărcare */
+.btn-download {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-download:hover {
+    transform: translateY(-3px); /* Ridică butonul */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Animație pentru carduri */
+.card-material {
+    transition: transform 0.3s ease;
+}
+
+.card-material:hover {
+    transform: scale(1.02); /* Mărește cardul foarte puțin */
+}
+
+/* Stil pentru bara de căutare */
+.search-container {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    width: 200px;
+}
